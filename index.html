@@ -7,8 +7,27 @@
 <meta property="og:title" content="Médicos en shock: el hábito nocturno con gelatina que adelgaza">
 <meta property="og:description" content="Miles de mujeres están perdiendo peso rápidamente con este hábito nocturno. Vea antes que lo eliminen.">
 <meta name="robots" content="noindex,nofollow">
-<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids="" async defer></script>
+
+<!-- 🔴 UTMify Pixel -->
+<script>
+  window.pixelId = "690ac8561f3535c56d47e67f";
+  var a = document.createElement("script");
+  a.async = true;
+  a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+  document.head.appendChild(a);
+</script>
+
+<!-- 🔴 UTMify UTMs -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<!-- 🔴 FIM UTMify -->
+
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
@@ -34,10 +53,15 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 .video-hint span{color:#e53935;font-weight:700;}
 .video-wrapper{margin:0 auto 8px;max-width:420px;position:relative;}
 
+/* CTA — oculto por padrão, aparece via JS após tempo do vídeo */
 .cta-btn{display:block;width:100%;max-width:420px;margin:14px auto 4px;background:#099f00;color:#fff;font-size:17px;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:1px;padding:17px 24px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;text-align:center;box-shadow:0 4px 18px rgba(9,159,0,.45);animation:pulse-cta 2s infinite;transition:background .2s;}
 .cta-btn:hover{background:#078700;}
 .cta-btn .cta-sub{display:block;font-size:11px;font-weight:400;letter-spacing:.5px;opacity:.85;margin-top:3px;}
 @keyframes pulse-cta{0%,100%{transform:scale(1);box-shadow:0 4px 18px rgba(9,159,0,.4);}50%{transform:scale(1.025);box-shadow:0 6px 28px rgba(9,159,0,.65);}}
+
+/* CTA wrapper — hidden inicialmente */
+#cta-wrapper{visibility:hidden;opacity:0;max-height:0;overflow:hidden;transition:opacity .8s ease,max-height .5s ease;}
+#cta-wrapper.visible{visibility:visible;opacity:1;max-height:400px;overflow:visible;}
 
 .scarcity-bar{max-width:420px;margin:0 auto 6px;text-align:center;font-size:12px;color:#c62828;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.5px;animation:blink-red 2s infinite;}
 @keyframes blink-red{0%,100%{opacity:1;}50%{opacity:.5;}}
@@ -50,6 +74,10 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 .ticker-wrap{background:#f5f5f5;overflow:hidden;padding:16px 0;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;margin:20px 0;}
 .ticker{display:flex;width:fit-content;animation:scroll-left 22s linear infinite;align-items:center;}
 .ticker-item{margin:0 32px;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:#aaa;letter-spacing:2px;white-space:nowrap;opacity:.7;}
+
+/* PONTE vídeo → comentários */
+.social-bridge{max-width:660px;margin:0 auto 20px;padding:14px 20px;background:#fff3e0;border-left:4px solid #ff8f00;border-radius:4px;text-align:center;font-size:15px;color:#333;font-family:'Source Serif 4',Georgia,serif;line-height:1.6;}
+.social-bridge strong{color:#c62828;}
 
 .objections-box{max-width:660px;margin:0 auto 28px;padding:20px 24px;background:#f9f9f9;border-left:4px solid #e53935;border-radius:4px;text-align:left;}
 .objections-box h3{font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;color:#111;margin-bottom:14px;letter-spacing:.5px;}
@@ -70,12 +98,14 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 .fb-reactions span{background:#fff;border-radius:50%;padding:2px;font-size:13px;line-height:1;}
 .fb-comment-highlight .fb-bubble{background:#fff8e1;border:1px solid #ffe082;}
 
+/* POPUP PROVA SOCIAL */
 #notif-popup{position:fixed;bottom:80px;left:16px;z-index:9998;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:0 4px 20px rgba(0,0,0,.18);max-width:280px;display:none;border-left:4px solid #099f00;animation:slidein .4s ease;}
 @keyframes slidein{from{transform:translateX(-120%);opacity:0;}to{transform:translateX(0);opacity:1;}}
 #notif-popup .np-name{font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;color:#111;}
 #notif-popup .np-text{font-size:12px;color:#555;margin-top:2px;line-height:1.4;}
 #notif-popup .np-time{font-size:11px;color:#099f00;margin-top:4px;font-family:'Oswald',sans-serif;}
 
+/* EXIT INTENT */
 #exit-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:99999;align-items:center;justify-content:center;}
 #exit-overlay.show{display:flex;}
 #exit-box{background:#fff;border-radius:16px;padding:32px 28px;max-width:420px;width:90%;text-align:center;position:relative;}
@@ -83,24 +113,28 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 #exit-box h2{font-family:'Oswald',sans-serif;font-size:22px;color:#c62828;font-weight:700;margin-bottom:8px;}
 #exit-box p{font-size:15px;color:#444;line-height:1.6;margin-bottom:18px;}
 #exit-box .exit-cta{display:block;background:#099f00;color:#fff;font-family:'Oswald',sans-serif;font-weight:700;font-size:17px;padding:15px;border-radius:10px;text-decoration:none;letter-spacing:1px;box-shadow:0 4px 14px rgba(9,159,0,.4);}
-#exit-box .exit-no{font-size:12px;color:#aaa;margin-top:12px;cursor:pointer;display:block;text-decoration:underline;}
+/* FIX: texto menos agressivo no exit */
+#exit-box .exit-no{font-size:12px;color:#bbb;margin-top:14px;cursor:pointer;display:block;}
 
+/* STICKY CTA MOBILE — também oculto até CTA aparecer */
 #sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#099f00;color:#fff;text-align:center;padding:14px 16px;font-size:16px;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:1px;box-shadow:0 -3px 14px rgba(0,0,0,.25);cursor:pointer;animation:pulse-cta 2s infinite;display:none;}
 
 .site-footer{margin-top:40px;padding:20px 16px;background:#f5f5f5;border-top:1px solid #ddd;text-align:center;font-size:12px;color:#888;line-height:1.6;font-family:'Oswald',sans-serif;letter-spacing:.5px;}
 
 @keyframes scroll-left{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-@media(max-width:600px){.headline-text{font-size:19px;}#sticky-cta{display:block;}body{padding-bottom:60px;}#notif-popup{bottom:70px;}}
+@media(max-width:600px){.headline-text{font-size:19px;}body{padding-bottom:60px;}#notif-popup{bottom:70px;}}
 </style>
 </head>
 <body>
 
+<!-- TOPO -->
 <div class="top-label">S A L U D</div>
 
 <div class="breaking-wrap">
   <div class="breaking">ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp;</div>
 </div>
 
+<!-- URGENCY TIMER -->
 <div class="urgency-bar">
   <span>⚠️</span>
   <span class="timer-label">ESTE VÍDEO SERÁ ELIMINADO EN:</span>
@@ -108,6 +142,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   <span style="color:#aaa;font-size:11px;">— Vea ahora antes de que lo borren</span>
 </div>
 
+<!-- HEADLINE -->
 <div class="headline-wrap">
   <p>
     <span class="urgente-tag">⚡ URGENTE:</span>
@@ -115,18 +150,22 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   </p>
 </div>
 
+<!-- SUBHEADLINE -->
 <div class="subheadline">
   El vídeo a continuación revela el método exacto que está siendo <strong>silenciado por las grandes farmacéuticas</strong> — míralo completo para descubrir la receta gratuita al final.
 </div>
 
+<!-- META -->
 <div class="meta-bar">Por el Equipo Editorial de Salud &nbsp;|&nbsp; Actualizado hace 3 horas &nbsp;|&nbsp; ✅ Información verificada</div>
 
+<!-- CONTAINER -->
 <div class="container">
 
   <p class="viewer-count">🔴 <strong><span class="atomicat-random" data-min="400" data-max="700">542</span> personas</strong> están viendo esto ahora.</p>
 
   <p class="video-hint">👇 <span>Mira hasta el final</span> — la receta completa se revela en los últimos minutos</p>
 
+  <!-- VSL -->
   <div class="video-wrapper" id="video-section">
     <script src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" id="vturb-smartplayer-js" fetchpriority="high"></script>
     <vturb-smartplayer id="vid-69ae490da584f1a40500143b" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer>
@@ -138,21 +177,24 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     </script>
   </div>
 
-  <p class="scarcity-bar">🔥 ¡Solo quedan <span id="spots">23</span> accesos gratuitos disponibles hoy!</p>
-
-  <a class="cta-btn" href="https://pay.kiwify.com/tu4YBdj" target="_blank">
-    ▶ ¡Sí! Quiero quemar grasa AHORA
-    <span class="cta-sub">Acceso inmediato · Sin tarjeta requerida</span>
-  </a>
-
-  <div class="trust-badges">
-    <span>🔒 Compra 100% segura</span>
-    <span>⚡ Acceso inmediato</span>
-    <span>✅ Garantía de 7 días</span>
+  <!-- CTA — aparece após 60s ou quando vídeo termina -->
+  <div id="cta-wrapper">
+    <p class="scarcity-bar">🔥 ¡Solo quedan <span id="spots">23</span> accesos gratuitos disponibles hoy!</p>
+    <!-- 🔴 TROCAR LINK: substituir pela URL de checkout correta -->
+    <a class="cta-btn cta-link" id="cta1-btn" href="CHECKOUT_URL_AQUI" target="_blank">
+      ▶ ¡Sí! Quiero quemar grasa AHORA
+      <span class="cta-sub">Acceso inmediato · Sin tarjeta requerida</span>
+    </a>
+    <div class="trust-badges">
+      <span>🔒 Compra 100% segura</span>
+      <span>⚡ Acceso inmediato</span>
+      <span>✅ Garantía de 7 días</span>
+    </div>
   </div>
 
 </div>
 
+<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker">
     <span class="ticker-item">FORBES</span><span class="ticker-item">CNN</span><span class="ticker-item">BBC</span><span class="ticker-item">HEALTHLINE</span><span class="ticker-item">THE GUARDIAN</span><span class="ticker-item">REUTERS</span>
@@ -160,6 +202,12 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   </div>
 </div>
 
+<!-- PONTE vídeo → comentários -->
+<div class="social-bridge">
+  ✅ <strong>Más de 89.000 mujeres</strong> ya probaron este método — vea lo que están diciendo:
+</div>
+
+<!-- COMENTÁRIOS -->
 <div class="fb-comments-wrap">
   <div class="fb-count">💬 Mostrando 13 de 89.741 comentarios</div>
 
@@ -296,7 +344,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   </div>
 </div>
 
-<!-- QUEBRA DE OBJEÇÕES -->
+<!-- OBJEÇÕES -->
 <div class="objections-box">
   <h3>❓ PREGUNTAS FRECUENTES</h3>
   <div class="objection-item">
@@ -317,12 +365,13 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   </div>
 </div>
 
-<!-- 2º CTA -->
-<div style="max-width:680px;margin:0 auto 40px;padding:0 16px;text-align:center;">
+<!-- 2º CTA — também oculto, aparece junto com o 1º -->
+<div id="cta2-wrapper" style="max-width:680px;margin:0 auto 40px;padding:0 16px;text-align:center;visibility:hidden;opacity:0;max-height:0;overflow:hidden;transition:opacity .8s ease,max-height .5s ease;">
   <p style="font-size:15px;color:#333;margin-bottom:14px;line-height:1.6;">
     Miles de mujeres ya están transformando su cuerpo con este método. <strong>¿Cuándo empiezas tú?</strong>
   </p>
-  <a class="cta-btn" href="https://pay.kiwify.com/tu4YBdj" target="_blank" style="max-width:100%;">
+  <!-- 🔴 TROCAR LINK: substituir pela URL de checkout correta -->
+  <a class="cta-btn cta-link" id="cta2-btn" href="CHECKOUT_URL_AQUI" target="_blank" style="max-width:100%;">
     ▶ ¡Quiero el hábito nocturno AHORA!
     <span class="cta-sub">Acceso inmediato · Garantía de 7 días</span>
   </a>
@@ -331,11 +380,13 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   </p>
 </div>
 
+<!-- FOOTER -->
 <footer class="site-footer">
   Copyright 2025 ® Todos los derechos reservados.<br>
   <span style="font-size:11px;color:#bbb;">Este sitio no forma parte de Facebook Inc. Los resultados individuales pueden variar.</span>
 </footer>
 
+<!-- STICKY CTA MOBILE -->
 <div id="sticky-cta" onclick="document.getElementById('video-section').scrollIntoView({behavior:'smooth'})">
   ▶ ¡Ver el método gratis ahora!
 </div>
@@ -352,14 +403,17 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
   <div id="exit-box">
     <span class="exit-close" id="exit-close">✕</span>
     <h2>⚠️ ¡Espera!</h2>
-    <p>Antes de irte, <strong>obtén la receta gratis</strong>. Miles de mujeres ya perdieron peso con este hábito nocturno — y tú también puedes.</p>
-    <a class="exit-cta" href="https://pay.kiwify.com/tu4YBdj" target="_blank">✅ Sí, quiero la receta gratis</a>
-    <span class="exit-no" id="exit-no">No, prefiero seguir con sobrepeso</span>
+    <p>Antes de irte, <strong>obtén la receta gratis</strong>. Miles de mujeres ya están perdiendo peso con este hábito nocturno — y tú también puedes empezar hoy.</p>
+    <!-- 🔴 TROCAR LINK: substituir pela URL de checkout correta -->
+    <a class="exit-cta cta-link" id="exit-cta-btn" href="CHECKOUT_URL_AQUI" target="_blank">✅ Sí, quiero la receta gratis</a>
+    <!-- FIX: texto neutro, sem agressividade -->
+    <span class="exit-no" id="exit-no">Ahora no, gracias</span>
   </div>
 </div>
 
+<!-- SCRIPTS -->
 <script>
-// Viewer counter
+// 1. Viewer counter
 setInterval(function(){
   var el=document.querySelector('.atomicat-random');
   if(!el)return;
@@ -368,7 +422,7 @@ setInterval(function(){
   el.textContent=Math.floor(Math.random()*(max-min+1))+min;
 },5000);
 
-// Countdown
+// 2. Countdown timer
 (function(){
   var total=14*60+59;
   function tick(){
@@ -380,38 +434,97 @@ setInterval(function(){
   tick();setInterval(tick,1000);
 })();
 
-// Spots decrescentes
+// 3. Spots decrescentes
 (function(){
   var spots=23;
   setInterval(function(){
-    if(spots>3){spots--;var el=document.getElementById('spots');if(el)el.textContent=spots;}
+    if(spots>3){
+      spots--;
+      var el=document.getElementById('spots');
+      if(el)el.textContent=spots;
+    }
   },Math.floor(Math.random()*20000)+15000);
 })();
 
-// Popup prova social
+// 4. CTA aparece após 60s (dar tempo ao vídeo persuadir)
 (function(){
-  var names=['María G.','Luciana R.','Carmen P.','Sofía M.','Isabel T.','Valentina C.','Ana K.','Rosa F.'];
-  var actions=['acaba de acceder al método ahora mismo 🎉','acabó de ver el vídeo completo ✅','acaba de garantizar su acceso 🔥','ya empezó el hábito nocturno 🌙'];
-  var popup=document.getElementById('notif-popup');
-  function showNotif(){
-    document.getElementById('np-name').textContent=names[Math.floor(Math.random()*names.length)];
-    document.getElementById('np-text').textContent=actions[Math.floor(Math.random()*actions.length)];
-    popup.style.display='block';
-    setTimeout(function(){popup.style.display='none';},4500);
-    setTimeout(showNotif,Math.floor(Math.random()*18000)+12000);
+  function showCTA(){
+    // 1º CTA
+    var w=document.getElementById('cta-wrapper');
+    if(w){w.classList.add('visible');}
+    // 2º CTA
+    var w2=document.getElementById('cta2-wrapper');
+    if(w2){w2.style.visibility='visible';w2.style.opacity='1';w2.style.maxHeight='400px';w2.style.overflow='visible';}
+    // Sticky mobile
+    var s=document.getElementById('sticky-cta');
+    if(s){s.style.display='block';}
   }
-  setTimeout(showNotif,6000);
+  setTimeout(showCTA, 60000);
+  window.addEventListener('message',function(e){
+    if(e.data && (e.data.event==='ended' || e.data.type==='ended')){showCTA();}
+  });
 })();
 
-// Exit intent
+// UTM: propagar parâmetros da URL de entrada para todos os links de CTA
+(function(){
+  var CHECKOUT_BASE = 'CHECKOUT_URL_AQUI'; // 🔴 TROCAR pela URL real de checkout
+  var params = new URLSearchParams(window.location.search);
+  var utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src'];
+  var utmParams = new URLSearchParams();
+  utmKeys.forEach(function(k){ if(params.get(k)) utmParams.set(k, params.get(k)); });
+  var query = utmParams.toString();
+  var finalUrl = CHECKOUT_BASE + (CHECKOUT_BASE.indexOf('?') > -1 ? '&' : '?') + query;
+  document.querySelectorAll('.cta-link').forEach(function(el){
+    el.href = finalUrl;
+  });
+})();
+
+// 5. Popup prova social — só aparece se o vídeo NÃO estiver visível
+(function(){
+  var names=['María G.','Luciana R.','Carmen P.','Sofía M.','Isabel T.','Valentina C.','Ana K.','Rosa F.','Elena V.','Marta B.'];
+  var actions=['acaba de acceder al método ahora mismo 🎉','acabó de ver el vídeo completo ✅','acaba de garantizar su acceso 🔥','ya empezó el hábito nocturno 🌙','acaba de hacer su pedido 🛒'];
+  var popup=document.getElementById('notif-popup');
+  var videoVisible=true; // assume visível no início
+
+  // Observa se o player está no viewport
+  var videoEl=document.getElementById('video-section');
+  if(videoEl && 'IntersectionObserver' in window){
+    var observer=new IntersectionObserver(function(entries){
+      videoVisible=entries[0].isIntersecting;
+    },{threshold:0.3}); // 30% do vídeo visível já conta
+    observer.observe(videoEl);
+  }
+
+  function showNotif(){
+    if(!videoVisible){
+      // Só exibe se vídeo fora do viewport
+      document.getElementById('np-name').textContent=names[Math.floor(Math.random()*names.length)];
+      document.getElementById('np-text').textContent=actions[Math.floor(Math.random()*actions.length)];
+      popup.style.display='block';
+      setTimeout(function(){popup.style.display='none';},4500);
+    }
+    setTimeout(showNotif,Math.floor(Math.random()*18000)+12000);
+  }
+  setTimeout(showNotif,8000);
+})();
+
+// 6. Exit intent (desktop)
 (function(){
   var shown=false;
   document.addEventListener('mouseleave',function(e){
-    if(e.clientY<10&&!shown){shown=true;document.getElementById('exit-overlay').classList.add('show');}
+    if(e.clientY<10&&!shown){
+      shown=true;
+      document.getElementById('exit-overlay').classList.add('show');
+    }
   });
-  document.getElementById('exit-close').onclick=function(){document.getElementById('exit-overlay').classList.remove('show');};
-  document.getElementById('exit-no').onclick=function(){document.getElementById('exit-overlay').classList.remove('show');};
+  document.getElementById('exit-close').onclick=function(){
+    document.getElementById('exit-overlay').classList.remove('show');
+  };
+  document.getElementById('exit-no').onclick=function(){
+    document.getElementById('exit-overlay').classList.remove('show');
+  };
 })();
 </script>
+
 </body>
 </html>
