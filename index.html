@@ -4,383 +4,147 @@
 <meta charset="UTF-8">
 <title>Últimas Noticias sobre Salud y Bienestar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Médicos Furiosos: Truque da Gelatina Revelado">
-<meta property="og:description" content="Mulher perde 11kg em 2 semanas com método simples. Veja antes que removam.">
+<meta property="og:title" content="Médicos en shock: el hábito nocturno con gelatina que adelgaza">
+<meta property="og:description" content="Miles de mujeres están perdiendo peso rápidamente con este hábito nocturno. Vea antes que lo eliminen.">
 <meta name="robots" content="noindex,nofollow">
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids="" async defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 
-body{
-  font-family:'Source Serif 4', Georgia, serif;
-  background:#fff;
-  color:#111;
-}
+.top-label{background:#c62828;color:#fff;text-align:center;font-weight:700;padding:7px 0;font-size:13px;letter-spacing:4px;font-family:'Oswald',sans-serif;}
+.breaking-wrap{background:#e53935;overflow:hidden;white-space:nowrap;border-bottom:2px solid #b71c1c;}
+.breaking{display:inline-block;padding:10px 0;font-weight:700;font-size:13px;color:#fff;letter-spacing:1px;animation:scroll-left 20s linear infinite;font-family:'Oswald',sans-serif;}
 
-/* ===== TOPO ===== */
-.top-label{
-  background:#c62828;
-  color:#fff;
-  text-align:center;
-  font-weight:700;
-  padding:7px 0;
-  font-size:13px;
-  letter-spacing:4px;
-  font-family:'Oswald',sans-serif;
-}
-
-.breaking-wrap{
-  background:#e53935;
-  overflow:hidden;
-  white-space:nowrap;
-  border-bottom:2px solid #b71c1c;
-}
-.breaking{
-  display:inline-block;
-  padding:10px 0;
-  font-weight:700;
-  font-size:13px;
-  color:#fff;
-  letter-spacing:1px;
-  animation:scroll-left 20s linear infinite;
-  font-family:'Oswald',sans-serif;
-}
-
-/* ===== URGENCY BAR ===== */
-.urgency-bar{
-  background:#111;
-  color:#fff;
-  text-align:center;
-  padding:8px 16px;
-  font-size:13px;
-  font-family:'Oswald',sans-serif;
-  letter-spacing:1px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-}
+.urgency-bar{background:#111;color:#fff;text-align:center;padding:9px 16px;font-size:13px;font-family:'Oswald',sans-serif;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
 .urgency-bar .timer-label{color:#ffd600;font-weight:700;}
-.urgency-bar #countdown{
-  color:#ff3d00;
-  font-weight:700;
-  font-size:16px;
-  font-variant-numeric:tabular-nums;
-}
+.urgency-bar #countdown{color:#ff3d00;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums;}
 
-/* ===== CONTAINER ===== */
-.container{
-  max-width:800px;
-  margin:0 auto;
-  padding:24px 16px;
-  text-align:center;
-}
+.headline-wrap{max-width:740px;margin:22px auto 0;padding:0 16px;text-align:center;}
+.urgente-tag{color:#e53935;font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;letter-spacing:2px;}
+.headline-text{font-size:23px;font-weight:600;line-height:1.4;color:#111;font-family:'Source Serif 4',Georgia,serif;}
+.headline-text em{color:#e53935;font-style:normal;font-weight:700;}
 
-/* ===== HEADLINE ===== */
-.headline-wrap{
-  max-width:760px;
-  margin:20px auto 6px;
-  padding:0 16px;
-  text-align:center;
-}
-.urgente-tag{
-  color:#e53935;
-  font-family:'Oswald',sans-serif;
-  font-weight:700;
-  font-size:20px;
-  letter-spacing:2px;
-}
-.headline-text{
-  font-size:22px;
-  font-weight:600;
-  line-height:1.4;
-  color:#111;
-  font-family:'Source Serif 4',Georgia,serif;
-}
-.headline-text em{
-  color:#e53935;
-  font-style:normal;
-  font-weight:700;
-}
-
-/* ===== META BAR ===== */
-.meta-bar{
-  font-size:12px;
-  color:#777;
-  text-align:center;
-  margin:8px 0 4px;
-  font-family:'Oswald',sans-serif;
-  letter-spacing:.5px;
-}
-
-/* ===== VIEWER COUNT ===== */
-.viewer-count{
-  font-size:13px;
-  color:#444;
-  margin-bottom:6px;
-  font-family:'Oswald',sans-serif;
-}
+.subheadline{max-width:660px;margin:12px auto 0;padding:0 16px;text-align:center;font-size:16px;color:#444;line-height:1.65;}
+.meta-bar{font-size:12px;color:#999;text-align:center;margin:10px 0 4px;font-family:'Oswald',sans-serif;letter-spacing:.5px;}
+.viewer-count{font-size:13px;color:#444;margin-bottom:6px;font-family:'Oswald',sans-serif;}
 .viewer-count strong{color:#c62828;}
+.video-hint{font-size:12px;color:#777;margin-bottom:8px;font-family:'Oswald',sans-serif;letter-spacing:.5px;}
+.video-hint span{color:#e53935;font-weight:700;}
+.video-wrapper{margin:0 auto 8px;max-width:420px;position:relative;}
 
-/* ===== VIDEO WRAPPER ===== */
-.video-wrapper{
-  margin:0 auto 12px;
-  max-width:420px;
-  position:relative;
-}
-.video-placeholder{
-  background:#000;
-  aspect-ratio:3/4;
-  border-radius:4px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#555;
-  font-size:14px;
-}
+.cta-btn{display:block;width:100%;max-width:420px;margin:14px auto 4px;background:#099f00;color:#fff;font-size:17px;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:1px;padding:17px 24px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;text-align:center;box-shadow:0 4px 18px rgba(9,159,0,.45);animation:pulse-cta 2s infinite;transition:background .2s;}
+.cta-btn:hover{background:#078700;}
+.cta-btn .cta-sub{display:block;font-size:11px;font-weight:400;letter-spacing:.5px;opacity:.85;margin-top:3px;}
+@keyframes pulse-cta{0%,100%{transform:scale(1);box-shadow:0 4px 18px rgba(9,159,0,.4);}50%{transform:scale(1.025);box-shadow:0 6px 28px rgba(9,159,0,.65);}}
 
-/* ===== CTA BUTTON ===== */
-.cta-btn{
-  display:block;
-  width:100%;
-  max-width:420px;
-  margin:14px auto 6px;
-  background:#099f00;
-  color:#fff;
-  font-size:17px;
-  font-weight:700;
-  font-family:'Oswald',sans-serif;
-  letter-spacing:1px;
-  padding:16px 24px;
-  border-radius:12px;
-  text-decoration:none;
-  border:none;
-  cursor:pointer;
-  text-align:center;
-  box-shadow:0 4px 18px rgba(9,159,0,.45);
-  animation:pulse-cta 2s infinite;
-  transition:background .2s;
-}
-.cta-btn:hover{background:#07870}
-.cta-btn span{font-size:20px;margin-right:6px;}
+.scarcity-bar{max-width:420px;margin:0 auto 6px;text-align:center;font-size:12px;color:#c62828;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.5px;animation:blink-red 2s infinite;}
+@keyframes blink-red{0%,100%{opacity:1;}50%{opacity:.5;}}
 
-@keyframes pulse-cta{
-  0%,100%{transform:scale(1);box-shadow:0 4px 18px rgba(9,159,0,.4);}
-  50%{transform:scale(1.025);box-shadow:0 6px 28px rgba(9,159,0,.65);}
-}
-
-/* ===== TRUST BADGES ===== */
-.trust-badges{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  margin:6px auto 4px;
-  font-size:12px;
-  color:#555;
-  font-family:'Oswald',sans-serif;
-  flex-wrap:wrap;
-}
+.trust-badges{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px auto 4px;font-size:12px;color:#555;font-family:'Oswald',sans-serif;flex-wrap:wrap;}
 .trust-badges span{display:flex;align-items:center;gap:4px;}
 
-/* ===== TICKER LOGOS ===== */
-.ticker-wrap{
-  background:#f5f5f5;
-  overflow:hidden;
-  padding:16px 0;
-  border-top:1px solid #e0e0e0;
-  border-bottom:1px solid #e0e0e0;
-  margin:20px 0;
-}
-.ticker{
-  display:flex;
-  width:fit-content;
-  animation:scroll-left 22s linear infinite;
-  align-items:center;
-}
-.ticker-item{
-  margin:0 32px;
-  font-family:'Oswald',sans-serif;
-  font-weight:700;
-  font-size:16px;
-  color:#aaa;
-  letter-spacing:2px;
-  white-space:nowrap;
-  filter:grayscale(100%);
-  opacity:.7;
-}
+.container{max-width:800px;margin:0 auto;padding:18px 16px;text-align:center;}
 
-/* ===== SECTION HEADER ===== */
-.section-divider{
-  max-width:720px;
-  margin:0 auto 20px;
-  padding:0 16px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.section-divider::before,.section-divider::after{
-  content:'';flex:1;height:1px;background:#ddd;
-}
-.section-divider-text{
-  font-family:'Oswald',sans-serif;
-  font-size:12px;
-  color:#999;
-  letter-spacing:2px;
-  white-space:nowrap;
-}
+.ticker-wrap{background:#f5f5f5;overflow:hidden;padding:16px 0;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;margin:20px 0;}
+.ticker{display:flex;width:fit-content;animation:scroll-left 22s linear infinite;align-items:center;}
+.ticker-item{margin:0 32px;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;color:#aaa;letter-spacing:2px;white-space:nowrap;opacity:.7;}
 
-/* ===== COMMENTS ===== */
-.fb-comments-wrap{
-  max-width:680px;
-  margin:0 auto 40px;
-  padding:0 16px;
-}
-.fb-count{
-  font-size:13px;
-  color:#65676b;
-  margin-bottom:16px;
-  font-family:'Oswald',sans-serif;
-  letter-spacing:.5px;
-}
-.fb-comment{
-  display:flex;
-  align-items:flex-start;
-  margin-bottom:14px;
-}
-.fb-avatar{
-  width:38px;height:38px;
-  border-radius:50%;
-  background:#ddd center/cover no-repeat;
-  margin-right:10px;
-  flex-shrink:0;
-}
-.fb-bubble{
-  background:#f0f2f5;
-  border-radius:18px;
-  padding:9px 14px;
-}
+.objections-box{max-width:660px;margin:0 auto 28px;padding:20px 24px;background:#f9f9f9;border-left:4px solid #e53935;border-radius:4px;text-align:left;}
+.objections-box h3{font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;color:#111;margin-bottom:14px;letter-spacing:.5px;}
+.objection-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:11px;font-size:14px;color:#333;line-height:1.5;}
+.objection-item:last-child{margin-bottom:0;}
+.obj-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
+
+.fb-comments-wrap{max-width:680px;margin:0 auto 32px;padding:0 16px;}
+.fb-count{font-size:13px;color:#65676b;margin-bottom:16px;font-family:'Oswald',sans-serif;letter-spacing:.5px;}
+.fb-comment{display:flex;align-items:flex-start;margin-bottom:14px;}
+.fb-avatar{width:38px;height:38px;border-radius:50%;background:#ddd center/cover no-repeat;margin-right:10px;flex-shrink:0;}
+.fb-bubble{background:#f0f2f5;border-radius:18px;padding:9px 14px;}
 .fb-name{font-weight:700;font-size:14px;font-family:'Oswald',sans-serif;}
 .fb-text{font-size:14px;line-height:1.45;color:#111;}
 .fb-actions{font-size:12px;color:#65676b;margin-left:50px;margin-top:4px;}
 .fb-reply{margin-left:48px;}
-.fb-reactions{
-  display:flex;align-items:center;gap:4px;
-  margin-left:50px;margin-top:3px;font-size:13px;color:#65676b;
-}
+.fb-reactions{display:flex;align-items:center;gap:4px;margin-left:50px;margin-top:3px;font-size:13px;color:#65676b;}
 .fb-reactions span{background:#fff;border-radius:50%;padding:2px;font-size:13px;line-height:1;}
-.fb-inline-photo{
-  display:block;width:70%;max-width:280px;height:auto;
-  border-radius:10px;margin:8px auto 0;
-  box-shadow:0 2px 8px rgba(0,0,0,.15);
-}
+.fb-comment-highlight .fb-bubble{background:#fff8e1;border:1px solid #ffe082;}
 
-/* ===== NEW HIGHLIGHT COMMENT ===== */
-.fb-comment-highlight .fb-bubble{
-  background:#fff8e1;
-  border:1px solid #ffe082;
-}
+#notif-popup{position:fixed;bottom:80px;left:16px;z-index:9998;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:0 4px 20px rgba(0,0,0,.18);max-width:280px;display:none;border-left:4px solid #099f00;animation:slidein .4s ease;}
+@keyframes slidein{from{transform:translateX(-120%);opacity:0;}to{transform:translateX(0);opacity:1;}}
+#notif-popup .np-name{font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;color:#111;}
+#notif-popup .np-text{font-size:12px;color:#555;margin-top:2px;line-height:1.4;}
+#notif-popup .np-time{font-size:11px;color:#099f00;margin-top:4px;font-family:'Oswald',sans-serif;}
 
-/* ===== STICKY CTA MOBILE ===== */
-#sticky-cta{
-  position:fixed;bottom:0;left:0;right:0;z-index:9999;
-  background:#099f00;color:#fff;
-  text-align:center;padding:14px 16px;
-  font-size:16px;font-weight:700;
-  font-family:'Oswald',sans-serif;
-  letter-spacing:1px;
-  box-shadow:0 -3px 14px rgba(0,0,0,.25);
-  cursor:pointer;
-  animation:pulse-cta 2s infinite;
-  display:none;
-}
+#exit-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:99999;align-items:center;justify-content:center;}
+#exit-overlay.show{display:flex;}
+#exit-box{background:#fff;border-radius:16px;padding:32px 28px;max-width:420px;width:90%;text-align:center;position:relative;}
+#exit-box .exit-close{position:absolute;top:12px;right:16px;font-size:22px;cursor:pointer;color:#999;}
+#exit-box h2{font-family:'Oswald',sans-serif;font-size:22px;color:#c62828;font-weight:700;margin-bottom:8px;}
+#exit-box p{font-size:15px;color:#444;line-height:1.6;margin-bottom:18px;}
+#exit-box .exit-cta{display:block;background:#099f00;color:#fff;font-family:'Oswald',sans-serif;font-weight:700;font-size:17px;padding:15px;border-radius:10px;text-decoration:none;letter-spacing:1px;box-shadow:0 4px 14px rgba(9,159,0,.4);}
+#exit-box .exit-no{font-size:12px;color:#aaa;margin-top:12px;cursor:pointer;display:block;text-decoration:underline;}
 
-/* ===== FOOTER ===== */
-.site-footer{
-  margin-top:40px;padding:20px 16px;
-  background:#f5f5f5;border-top:1px solid #ddd;
-  text-align:center;font-size:12px;color:#888;
-  line-height:1.6;font-family:'Oswald',sans-serif;
-  letter-spacing:.5px;
-}
+#sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#099f00;color:#fff;text-align:center;padding:14px 16px;font-size:16px;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:1px;box-shadow:0 -3px 14px rgba(0,0,0,.25);cursor:pointer;animation:pulse-cta 2s infinite;display:none;}
 
-/* ===== ANIMATIONS ===== */
-@keyframes scroll-left{
-  0%{transform:translateX(0);}
-  100%{transform:translateX(-50%);}
-}
+.site-footer{margin-top:40px;padding:20px 16px;background:#f5f5f5;border-top:1px solid #ddd;text-align:center;font-size:12px;color:#888;line-height:1.6;font-family:'Oswald',sans-serif;letter-spacing:.5px;}
 
-/* ===== MOBILE ===== */
-@media(max-width:600px){
-  .headline-text{font-size:18px;}
-  #sticky-cta{display:block;}
-  body{padding-bottom:60px;}
-}
+@keyframes scroll-left{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+@media(max-width:600px){.headline-text{font-size:19px;}#sticky-cta{display:block;}body{padding-bottom:60px;}#notif-popup{bottom:70px;}}
 </style>
 </head>
 <body>
 
-<!-- TOPO -->
 <div class="top-label">S A L U D</div>
 
 <div class="breaking-wrap">
-  <div class="breaking">
-    ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp;
-  </div>
+  <div class="breaking">ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp; ÚLTIMAS NOTICIAS SOBRE SALUD Y BIENESTAR &nbsp;•&nbsp;</div>
 </div>
 
-<!-- URGENCY TIMER BAR -->
 <div class="urgency-bar">
   <span>⚠️</span>
-  <span class="timer-label">ESTE VÍDEO SERÁ REMOVIDO EN:</span>
+  <span class="timer-label">ESTE VÍDEO SERÁ ELIMINADO EN:</span>
   <span id="countdown">14:59</span>
   <span style="color:#aaa;font-size:11px;">— Vea ahora antes de que lo borren</span>
 </div>
 
-<!-- HEADLINE -->
 <div class="headline-wrap">
-  <p style="margin-bottom:10px;">
+  <p>
     <span class="urgente-tag">⚡ URGENTE:</span>
-    <span class="headline-text"> Médicos en PÁNICO: mujer de 47 años reveló el <em>truco de la gelatina</em> que hace perder hasta 11 kg en 2 semanas — sin dieta, sin gimnasio.</span>
+    <span class="headline-text"> Médicos en shock tras descubrir el <em>hábito nocturno con gelatina</em> que está ayudando a miles de mujeres a perder peso rápidamente.</span>
   </p>
 </div>
 
-<div class="meta-bar">
-  Por el Equipo Editorial de Salud &nbsp;|&nbsp; Actualizado hace 3 horas
+<div class="subheadline">
+  El vídeo a continuación revela el método exacto que está siendo <strong>silenciado por las grandes farmacéuticas</strong> — míralo completo para descubrir la receta gratuita al final.
 </div>
 
-<!-- CONTAINER PRINCIPAL -->
+<div class="meta-bar">Por el Equipo Editorial de Salud &nbsp;|&nbsp; Actualizado hace 3 horas &nbsp;|&nbsp; ✅ Información verificada</div>
+
 <div class="container">
 
-  <!-- VIEWER COUNT -->
-  <p class="viewer-count">
-    🔴 <strong><span class="atomicat-random" data-min="400" data-max="700">542</span> personas</strong> están viendo esto ahora.
-  </p>
+  <p class="viewer-count">🔴 <strong><span class="atomicat-random" data-min="400" data-max="700">542</span> personas</strong> están viendo esto ahora.</p>
 
-  <!-- VIDEO VSL CONVERTEAI/VTURB -->
+  <p class="video-hint">👇 <span>Mira hasta el final</span> — la receta completa se revela en los últimos minutos</p>
+
   <div class="video-wrapper" id="video-section">
     <script src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" id="vturb-smartplayer-js" fetchpriority="high"></script>
-    <vturb-smartplayer
-      id="vid-69ae490da584f1a40500143b"
-      style="display:block;margin:0 auto;width:100%;max-width:400px;">
-    </vturb-smartplayer>
+    <vturb-smartplayer id="vid-69ae490da584f1a40500143b" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer>
     <script type="text/javascript">
-      var s = document.createElement("script");
-      s.src = "https://scripts.converteai.net/8221687a-defe-4274-9840-e896c3c1be43/players/69ae490da584f1a40500143b/v4/player.js";
-      s.async = true;
+      var s=document.createElement("script");
+      s.src="https://scripts.converteai.net/8221687a-defe-4274-9840-e896c3c1be43/players/69ae490da584f1a40500143b/v4/player.js";
+      s.async=true;
       document.head.appendChild(s);
     </script>
   </div>
 
-  <!-- CTA PRINCIPAL -->
+  <p class="scarcity-bar">🔥 ¡Solo quedan <span id="spots">23</span> accesos gratuitos disponibles hoy!</p>
+
   <a class="cta-btn" href="https://pay.kiwify.com/tu4YBdj" target="_blank">
-    <span>▶</span> ¡Sí! Quiero quemar grasa AHORA
+    ▶ ¡Sí! Quiero quemar grasa AHORA
+    <span class="cta-sub">Acceso inmediato · Sin tarjeta requerida</span>
   </a>
 
-  <!-- TRUST BADGES -->
   <div class="trust-badges">
     <span>🔒 Compra 100% segura</span>
     <span>⚡ Acceso inmediato</span>
@@ -389,234 +153,213 @@ body{
 
 </div>
 
-<!-- TICKER DE LOGOS -->
 <div class="ticker-wrap">
   <div class="ticker">
-    <span class="ticker-item">FORBES</span>
-    <span class="ticker-item">CNN</span>
-    <span class="ticker-item">BBC</span>
-    <span class="ticker-item">HEALTHLINE</span>
-    <span class="ticker-item">THE GUARDIAN</span>
-    <span class="ticker-item">REUTERS</span>
-    <span class="ticker-item">FORBES</span>
-    <span class="ticker-item">CNN</span>
-    <span class="ticker-item">BBC</span>
-    <span class="ticker-item">HEALTHLINE</span>
-    <span class="ticker-item">THE GUARDIAN</span>
-    <span class="ticker-item">REUTERS</span>
+    <span class="ticker-item">FORBES</span><span class="ticker-item">CNN</span><span class="ticker-item">BBC</span><span class="ticker-item">HEALTHLINE</span><span class="ticker-item">THE GUARDIAN</span><span class="ticker-item">REUTERS</span>
+    <span class="ticker-item">FORBES</span><span class="ticker-item">CNN</span><span class="ticker-item">BBC</span><span class="ticker-item">HEALTHLINE</span><span class="ticker-item">THE GUARDIAN</span><span class="ticker-item">REUTERS</span>
   </div>
 </div>
 
-<!-- COMMENTS -->
 <div class="fb-comments-wrap">
+  <div class="fb-count">💬 Mostrando 13 de 89.741 comentarios</div>
 
-  <div class="fb-count">Mostrando 13 de 89.741 comentarios</div>
-
-  <!-- Sandra — NOVO COMENTÁRIO DE ALTO IMPACTO -->
   <div class="fb-comment fb-comment-highlight">
-    <div class="fb-avatar" style="background-color:#c8e6c9;background-image:url('https://i.pravatar.cc/80?img=47')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=47')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Sandra Reyes ✅</div>
-        <div class="fb-text">
-          Yo no creía… pero en <strong>9 días bajé 7 kilos</strong>. Mi ropa del año pasado ya me queda de nuevo.
-          Lo recomiendo a todas mis amigas. Este truco cambió mi vida. 🙏
-        </div>
+        <div class="fb-text">Yo no creía… pero en <strong>9 días bajé 7 kilos</strong>. Mi ropa del año pasado ya me queda de nuevo. Lo recomiendo a todas mis amigas. Este truco cambió mi vida. 🙏</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 8 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>47</strong></div>
     </div>
   </div>
 
-  <!-- Patricia -->
   <div class="fb-comment">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=5')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=5')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Patricia Gómez</div>
-        <div class="fb-text">
-          Al principio era escéptica, pero después de probarlo estoy encantada.
-          Finalmente alcancé mi peso ideal y esto me ayudó a cumplir mis otros objetivos también.
-        </div>
+        <div class="fb-text">Al principio era escéptica, pero después de probarlo estoy encantada. Finalmente alcancé mi peso ideal y esto me ayudó a cumplir mis otros objetivos también.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 24 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>32</strong></div>
     </div>
   </div>
 
-  <!-- Jennifer REPLY -->
   <div class="fb-comment fb-reply">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=9')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=9')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Jennifer Avery</div>
-        <div class="fb-text">
-          Chica, yo también perdí 11 libras en solo una semana.
-          ¡Este truco de gelatina es increíble!
-        </div>
+        <div class="fb-text">Chica, yo también perdí 11 libras en solo una semana. ¡Este hábito nocturno con gelatina es increíble!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 46 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>21</strong></div>
     </div>
   </div>
 
-  <!-- Jessica -->
   <div class="fb-comment">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=16')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=16')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Jessica Brown</div>
-        <div class="fb-text">
-          He estado usando este truco de gelatina por poco más de 3 semanas y
-          ¡mis pantalones ya se me caen! ¡Incluso mi esposo me elogió hoy!
-          Gracias por ayudar a tanta gente sin pedir nada a cambio.
-        </div>
+        <div class="fb-text">He estado usando este hábito nocturno por poco más de 3 semanas y ¡mis pantalones ya se me caen! ¡Incluso mi esposo me elogió hoy! Gracias por ayudar a tanta gente sin pedir nada a cambio.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 58 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>18</strong></div>
     </div>
   </div>
 
-  <!-- Olivia -->
   <div class="fb-comment">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=25')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=25')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Olivia S. Taylor</div>
-        <div class="fb-text">
-          Por fin alguien que explica todo en solo unos minutos y sin jerga médica.
-          ¡Empiezo esta mañana! Gracias por ser tan clara y directa.
-        </div>
+        <div class="fb-text">Por fin alguien que explica todo en solo unos minutos y sin jerga médica. ¡Empiezo esta noche! Gracias por ser tan clara y directa.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 2 h</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>26</strong></div>
     </div>
   </div>
 
-  <!-- Ashley -->
   <div class="fb-comment">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=32')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=32')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Ashley Davis</div>
-        <div class="fb-text">
-          Antes la ansiedad por comer me controlaba; siempre estaba comiendo dulces sin parar.
-          Pero ahora ya no los deseo, y ya bajé 19 libras en solo dos semanas.
-          No me sentía tan segura desde hace años.
-        </div>
+        <div class="fb-text">Antes la ansiedad por comer me controlaba; siempre estaba comiendo dulces sin parar. Pero ahora ya no los deseo, y ya bajé 19 libras en solo dos semanas. No me sentía tan segura desde hace años.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 3 h</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>13</strong></div>
     </div>
   </div>
 
-  <!-- Emily REPLY -->
   <div class="fb-comment fb-reply">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=44')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=44')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Emily Johnson</div>
-        <div class="fb-text">
-          Eso es increíble, hermosa.
-          ¿Hiciste algo más en tu rutina además de la receta?
-        </div>
+        <div class="fb-text">Eso es increíble, hermosa. ¿Hiciste algo más en tu rutina además de la receta?</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 46 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>1</strong></div>
     </div>
   </div>
 
-  <!-- Ashley REPLY -->
   <div class="fb-comment fb-reply">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=32')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=32')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Ashley Davis</div>
-        <div class="fb-text">
-          No, ¡solo la receta! No hice dietas ni pisé el gimnasio.
-          Es una locura cómo algo tan simple me está ayudando a bajar tanto de peso.
-        </div>
+        <div class="fb-text">No, ¡solo la receta! No hice dietas ni pisé el gimnasio. Es una locura cómo algo tan simple me está ayudando a bajar tanto de peso.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 17 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>15</strong></div>
     </div>
   </div>
 
-  <!-- Morgan -->
   <div class="fb-comment">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=52')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=52')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Morgan Harper</div>
-        <div class="fb-text">
-          ¿Alguien sabe si esto realmente funciona?
-          Mi médico dice que tengo obesidad extrema y me siento bastante desesperada.
-        </div>
+        <div class="fb-text">¿Alguien sabe si esto realmente funciona? Mi médico dice que tengo obesidad extrema y me siento bastante desesperada.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 12 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>21</strong></div>
     </div>
   </div>
 
-  <!-- Grace REPLY -->
   <div class="fb-comment fb-reply">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=60')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=60')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Grace Wilson</div>
-        <div class="fb-text">
-          Investigué en internet y encontré varios artículos científicos que demuestran
-          que este truco de gelatina realmente funciona.
-          En mi caso, los números en la balanza no paran de bajar —
-          ¡deberías probarlo tú también!
-        </div>
+        <div class="fb-text">Investigué en internet y encontré varios artículos científicos que demuestran que este hábito nocturno realmente funciona. En mi caso, los números en la balanza no paran de bajar — ¡deberías probarlo tú también!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 4 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>1</strong></div>
     </div>
   </div>
 
-  <!-- Morgan FINAL -->
   <div class="fb-comment fb-reply">
-    <div class="fb-avatar" style="background-color:#e0e0e0;background-image:url('https://i.pravatar.cc/80?img=52')"></div>
+    <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=52')"></div>
     <div>
       <div class="fb-bubble">
         <div class="fb-name">Morgan Harper</div>
-        <div class="fb-text">
-          ¡Gracias! Ya estoy anotando todos los ingredientes.
-          ¡Confío en que esto va a funcionar!
-        </div>
+        <div class="fb-text">¡Gracias! Ya estoy anotando todos los ingredientes. ¡Confío en que esto va a funcionar!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 1 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>1</strong></div>
     </div>
   </div>
-
-  <!-- CTA DENTRO DOS COMENTÁRIOS -->
-  <div style="margin:28px 0;text-align:center;">
-    <a class="cta-btn" href="https://pay.kiwify.com/tu4YBdj" target="_blank" style="max-width:100%;">
-      <span>▶</span> ¡Quiero el truco de la gelatina AHORA!
-    </a>
-    <p style="font-size:12px;color:#888;margin-top:8px;font-family:'Oswald',sans-serif;">
-      🔒 Compra segura &nbsp;•&nbsp; Acceso inmediato &nbsp;•&nbsp; Garantía de 7 días
-    </p>
-  </div>
-
 </div>
 
-<!-- FOOTER -->
+<!-- QUEBRA DE OBJEÇÕES -->
+<div class="objections-box">
+  <h3>❓ PREGUNTAS FRECUENTES</h3>
+  <div class="objection-item">
+    <span class="obj-icon">✅</span>
+    <span><strong>¿Funciona si tengo más de 50 años?</strong> Sí. El método fue desarrollado especialmente para mujeres de 40 a 65 años con metabolismo lento.</span>
+  </div>
+  <div class="objection-item">
+    <span class="obj-icon">✅</span>
+    <span><strong>¿Tengo que hacer dieta o ejercicio?</strong> No. El hábito nocturno trabaja mientras duermes, sin cambios en tu rutina.</span>
+  </div>
+  <div class="objection-item">
+    <span class="obj-icon">✅</span>
+    <span><strong>¿Cuánto tiempo tarda en funcionar?</strong> La mayoría de las mujeres notan resultados en los primeros 7 a 9 días.</span>
+  </div>
+  <div class="objection-item">
+    <span class="obj-icon">✅</span>
+    <span><strong>¿Es seguro?</strong> Sí. Todos los ingredientes son naturales y están disponibles en cualquier supermercado.</span>
+  </div>
+</div>
+
+<!-- 2º CTA -->
+<div style="max-width:680px;margin:0 auto 40px;padding:0 16px;text-align:center;">
+  <p style="font-size:15px;color:#333;margin-bottom:14px;line-height:1.6;">
+    Miles de mujeres ya están transformando su cuerpo con este método. <strong>¿Cuándo empiezas tú?</strong>
+  </p>
+  <a class="cta-btn" href="https://pay.kiwify.com/tu4YBdj" target="_blank" style="max-width:100%;">
+    ▶ ¡Quiero el hábito nocturno AHORA!
+    <span class="cta-sub">Acceso inmediato · Garantía de 7 días</span>
+  </a>
+  <p style="font-size:12px;color:#aaa;margin-top:10px;font-family:'Oswald',sans-serif;">
+    🔒 Compra segura &nbsp;•&nbsp; Sin riesgo &nbsp;•&nbsp; Cancela cuando quieras
+  </p>
+</div>
+
 <footer class="site-footer">
-  Copyright 2025 ® Todos los derechos reservados.
+  Copyright 2025 ® Todos los derechos reservados.<br>
+  <span style="font-size:11px;color:#bbb;">Este sitio no forma parte de Facebook Inc. Los resultados individuales pueden variar.</span>
 </footer>
 
-<!-- STICKY CTA MOBILE -->
 <div id="sticky-cta" onclick="document.getElementById('video-section').scrollIntoView({behavior:'smooth'})">
-  ▶ ¡Quiero el truco GRATIS ahora!
+  ▶ ¡Ver el método gratis ahora!
 </div>
 
-<!-- SCRIPTS -->
+<!-- POPUP PROVA SOCIAL -->
+<div id="notif-popup">
+  <div class="np-name" id="np-name">María G.</div>
+  <div class="np-text" id="np-text">acaba de acceder al método ahora mismo 🎉</div>
+  <div class="np-time">hace menos de 1 minuto · <span style="color:#099f00;">✓ verificado</span></div>
+</div>
+
+<!-- EXIT INTENT -->
+<div id="exit-overlay">
+  <div id="exit-box">
+    <span class="exit-close" id="exit-close">✕</span>
+    <h2>⚠️ ¡Espera!</h2>
+    <p>Antes de irte, <strong>obtén la receta gratis</strong>. Miles de mujeres ya perdieron peso con este hábito nocturno — y tú también puedes.</p>
+    <a class="exit-cta" href="https://pay.kiwify.com/tu4YBdj" target="_blank">✅ Sí, quiero la receta gratis</a>
+    <span class="exit-no" id="exit-no">No, prefiero seguir con sobrepeso</span>
+  </div>
+</div>
+
 <script>
-// Contador de pessoas
+// Viewer counter
 setInterval(function(){
   var el=document.querySelector('.atomicat-random');
   if(!el)return;
@@ -625,20 +368,50 @@ setInterval(function(){
   el.textContent=Math.floor(Math.random()*(max-min+1))+min;
 },5000);
 
-// Countdown timer
+// Countdown
 (function(){
   var total=14*60+59;
   function tick(){
-    var m=Math.floor(total/60);
-    var s=total%60;
+    var m=Math.floor(total/60),s=total%60;
     var el=document.getElementById('countdown');
-    if(el) el.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-    if(total>0) total--; else total=14*60+59;
+    if(el)el.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    total>0?total--:total=14*60+59;
   }
-  tick();
-  setInterval(tick,1000);
+  tick();setInterval(tick,1000);
+})();
+
+// Spots decrescentes
+(function(){
+  var spots=23;
+  setInterval(function(){
+    if(spots>3){spots--;var el=document.getElementById('spots');if(el)el.textContent=spots;}
+  },Math.floor(Math.random()*20000)+15000);
+})();
+
+// Popup prova social
+(function(){
+  var names=['María G.','Luciana R.','Carmen P.','Sofía M.','Isabel T.','Valentina C.','Ana K.','Rosa F.'];
+  var actions=['acaba de acceder al método ahora mismo 🎉','acabó de ver el vídeo completo ✅','acaba de garantizar su acceso 🔥','ya empezó el hábito nocturno 🌙'];
+  var popup=document.getElementById('notif-popup');
+  function showNotif(){
+    document.getElementById('np-name').textContent=names[Math.floor(Math.random()*names.length)];
+    document.getElementById('np-text').textContent=actions[Math.floor(Math.random()*actions.length)];
+    popup.style.display='block';
+    setTimeout(function(){popup.style.display='none';},4500);
+    setTimeout(showNotif,Math.floor(Math.random()*18000)+12000);
+  }
+  setTimeout(showNotif,6000);
+})();
+
+// Exit intent
+(function(){
+  var shown=false;
+  document.addEventListener('mouseleave',function(e){
+    if(e.clientY<10&&!shown){shown=true;document.getElementById('exit-overlay').classList.add('show');}
+  });
+  document.getElementById('exit-close').onclick=function(){document.getElementById('exit-overlay').classList.remove('show');};
+  document.getElementById('exit-no').onclick=function(){document.getElementById('exit-overlay').classList.remove('show');};
 })();
 </script>
-
 </body>
 </html>
