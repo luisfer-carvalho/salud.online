@@ -26,6 +26,232 @@
 ></script>
 <!-- 🔴 FIM UTMify -->
 
+<!-- 🌎 GEO CONFIG -->
+<script>
+var GEO = {
+  country: 'DEFAULT',
+  data: {
+    // ── LATAM ──────────────────────────────────────────
+    CL: {
+      names: ['Valentina Cruz','Camila Rojas','Sofía Soto','Gabriela Pérez','Luciana Flores','Patricia Vargas','Sandra Espinoza','Mariana Castro','Isabella Muñoz','Carmen Silva'],
+      commentNames: [
+        {main:'Sandra Reyes ✅', reply:'Patricia Gómez'},
+        {main:'Valentina Cruz', reply:'Camila Rojas'},
+        {main:'Isabella Muñoz', reply:'Sofía Soto'},
+        {main:'Gabriela Pérez', reply:'Luciana Flores'},
+        {main:'Mariana Castro', reply:'Carmen Silva'}
+      ],
+      word_mujeres: 'mujeres chilenas', flag:'🇨🇱'
+    },
+    MX: {
+      names: ['Fernanda López','Alejandra García','Valeria Hernández','Daniela Martínez','Jimena Ramírez','Paola Torres','Karla Flores','Itzel Morales','Brenda Sánchez','Nadia Reyes'],
+      commentNames: [
+        {main:'Fernanda López ✅', reply:'Alejandra García'},
+        {main:'Valeria Hernández', reply:'Daniela Martínez'},
+        {main:'Jimena Ramírez', reply:'Paola Torres'},
+        {main:'Karla Flores', reply:'Itzel Morales'},
+        {main:'Brenda Sánchez', reply:'Nadia Reyes'}
+      ],
+      word_mujeres: 'mujeres mexicanas', flag:'🇲🇽'
+    },
+    CO: {
+      names: ['Valentina Gómez','Daniela Rodríguez','Mariana Díaz','Gabriela Moreno','Isabella Vargas','Camila Jiménez','Laura Herrera','Natalia Ruiz','Andrea Molina','Juliana Castro'],
+      commentNames: [
+        {main:'Valentina Gómez ✅', reply:'Daniela Rodríguez'},
+        {main:'Mariana Díaz', reply:'Gabriela Moreno'},
+        {main:'Isabella Vargas', reply:'Camila Jiménez'},
+        {main:'Laura Herrera', reply:'Natalia Ruiz'},
+        {main:'Andrea Molina', reply:'Juliana Castro'}
+      ],
+      word_mujeres: 'mujeres colombianas', flag:'🇨🇴'
+    },
+    PE: {
+      names: ['Luciana Torres','Valeria Quispe','Andrea Mamani','Gabriela Huanca','Sofía Condori','Patricia Flores','Carmen Ramos','Isabella Mendoza','Daniela Chávez','Mariana López'],
+      commentNames: [
+        {main:'Luciana Torres ✅', reply:'Valeria Quispe'},
+        {main:'Andrea Mamani', reply:'Gabriela Huanca'},
+        {main:'Sofía Condori', reply:'Patricia Flores'},
+        {main:'Carmen Ramos', reply:'Isabella Mendoza'},
+        {main:'Daniela Chávez', reply:'Mariana López'}
+      ],
+      word_mujeres: 'mujeres peruanas', flag:'🇵🇪'
+    },
+    AR: {
+      names: ['Valentina González','Camila Fernández','Sofía Martínez','Luciana López','Isabella García','Florencia Rodríguez','Agustina Pérez','Milagros Sánchez','Rocío Torres','Juliana Díaz'],
+      commentNames: [
+        {main:'Valentina González ✅', reply:'Camila Fernández'},
+        {main:'Sofía Martínez', reply:'Luciana López'},
+        {main:'Isabella García', reply:'Florencia Rodríguez'},
+        {main:'Agustina Pérez', reply:'Milagros Sánchez'},
+        {main:'Rocío Torres', reply:'Juliana Díaz'}
+      ],
+      word_mujeres: 'mujeres argentinas', flag:'🇦🇷'
+    },
+    EC: {
+      names: ['Valentina Mora','Camila Vega','Gabriela Paredes','Isabella Cabrera','Sofía Andrade','Luciana Jara','Patricia Benítez','Sandra Córdova','Mariana Salazar','Carmen Aguirre'],
+      commentNames: [
+        {main:'Valentina Mora ✅', reply:'Camila Vega'},
+        {main:'Gabriela Paredes', reply:'Isabella Cabrera'},
+        {main:'Sofía Andrade', reply:'Luciana Jara'},
+        {main:'Patricia Benítez', reply:'Sandra Córdova'},
+        {main:'Mariana Salazar', reply:'Carmen Aguirre'}
+      ],
+      word_mujeres: 'mujeres ecuatorianas', flag:'🇪🇨'
+    },
+    BO: {
+      names: ['Valentina Mamani','Camila Quispe','Gabriela Condori','Isabella Flores','Sofía Torrico','Luciana Vargas','Patricia Aguilar','Sandra Llanos','Mariana Prado','Carmen Delgado'],
+      commentNames: [
+        {main:'Valentina Mamani ✅', reply:'Camila Quispe'},
+        {main:'Gabriela Condori', reply:'Isabella Flores'},
+        {main:'Sofía Torrico', reply:'Luciana Vargas'},
+        {main:'Patricia Aguilar', reply:'Sandra Llanos'},
+        {main:'Mariana Prado', reply:'Carmen Delgado'}
+      ],
+      word_mujeres: 'mujeres bolivianas', flag:'🇧🇴'
+    },
+    PY: {
+      names: ['Valentina Benítez','Camila González','Gabriela Martínez','Isabella López','Sofía Rodríguez','Luciana García','Patricia Romero','Sandra Núñez','Mariana Sosa','Carmen Cabrera'],
+      commentNames: [
+        {main:'Valentina Benítez ✅', reply:'Camila González'},
+        {main:'Gabriela Martínez', reply:'Isabella López'},
+        {main:'Sofía Rodríguez', reply:'Luciana García'},
+        {main:'Patricia Romero', reply:'Sandra Núñez'},
+        {main:'Mariana Sosa', reply:'Carmen Cabrera'}
+      ],
+      word_mujeres: 'mujeres paraguayas', flag:'🇵🇾'
+    },
+    PA: {
+      names: ['Valentina Herrera','Camila Morales','Gabriela Castro','Isabella Ramos','Sofía Vargas','Luciana Mendoza','Patricia Jiménez','Sandra Torres','Mariana Díaz','Carmen Reyes'],
+      commentNames: [
+        {main:'Valentina Herrera ✅', reply:'Camila Morales'},
+        {main:'Gabriela Castro', reply:'Isabella Ramos'},
+        {main:'Sofía Vargas', reply:'Luciana Mendoza'},
+        {main:'Patricia Jiménez', reply:'Sandra Torres'},
+        {main:'Mariana Díaz', reply:'Carmen Reyes'}
+      ],
+      word_mujeres: 'mujeres panameñas', flag:'🇵🇦'
+    },
+    DO: {
+      names: ['Valentina Marte','Camila Pérez','Gabriela Santos','Isabella Cruz','Sofía Reyes','Luciana Jiménez','Patricia Rodríguez','Sandra López','Mariana García','Carmen Núñez'],
+      commentNames: [
+        {main:'Valentina Marte ✅', reply:'Camila Pérez'},
+        {main:'Gabriela Santos', reply:'Isabella Cruz'},
+        {main:'Sofía Reyes', reply:'Luciana Jiménez'},
+        {main:'Patricia Rodríguez', reply:'Sandra López'},
+        {main:'Mariana García', reply:'Carmen Núñez'}
+      ],
+      word_mujeres: 'mujeres dominicanas', flag:'🇩🇴'
+    },
+    GT: {
+      names: ['Valentina Morales','Camila López','Gabriela García','Isabella Pérez','Sofía Hernández','Luciana Ramírez','Patricia González','Sandra Díaz','Mariana Torres','Carmen Flores'],
+      commentNames: [
+        {main:'Valentina Morales ✅', reply:'Camila López'},
+        {main:'Gabriela García', reply:'Isabella Pérez'},
+        {main:'Sofía Hernández', reply:'Luciana Ramírez'},
+        {main:'Patricia González', reply:'Sandra Díaz'},
+        {main:'Mariana Torres', reply:'Carmen Flores'}
+      ],
+      word_mujeres: 'mujeres guatemaltecas', flag:'🇬🇹'
+    },
+    // ── ESPANHA ────────────────────────────────────────
+    ES: {
+      names: ['Lucía Martínez','María García','Paula López','Carmen Sánchez','Ana González','Isabel Rodríguez','Marta Fernández','Laura Pérez','Cristina Díaz','Sofía Jiménez'],
+      commentNames: [
+        {main:'Lucía Martínez ✅', reply:'María García'},
+        {main:'Paula López', reply:'Carmen Sánchez'},
+        {main:'Ana González', reply:'Isabel Rodríguez'},
+        {main:'Marta Fernández', reply:'Laura Pérez'},
+        {main:'Cristina Díaz', reply:'Sofía Jiménez'}
+      ],
+      word_mujeres: 'mujeres españolas', flag:'🇪🇸'
+    },
+    // ── EUA HISPANOS ───────────────────────────────────
+    US: {
+      names: ['Gabriela Reyes','Valentina Morales','Camila Herrera','Isabella Vargas','Sofía Mendoza','Luciana Castro','Patricia Romero','Sandra Jiménez','Mariana Torres','Carmen López'],
+      commentNames: [
+        {main:'Gabriela Reyes ✅', reply:'Valentina Morales'},
+        {main:'Camila Herrera', reply:'Isabella Vargas'},
+        {main:'Sofía Mendoza', reply:'Luciana Castro'},
+        {main:'Patricia Romero', reply:'Sandra Jiménez'},
+        {main:'Mariana Torres', reply:'Carmen López'}
+      ],
+      word_mujeres: 'mujeres latinas', flag:'🇺🇸'
+    },
+    // ── DEFAULT ────────────────────────────────────────
+    DEFAULT: {
+      names: ['Sandra R.','Valentina C.','Camila M.','Isabella T.','Gabriela S.','Sofía R.','Luciana F.','Patricia G.','Mariana V.','Carmen B.'],
+      commentNames: [
+        {main:'Sandra Reyes ✅', reply:'Patricia Gómez'},
+        {main:'Valentina Cruz', reply:'Camila Rodríguez'},
+        {main:'Isabella Moreno', reply:'Sofía Ramírez'},
+        {main:'Gabriela Méndez', reply:'Luciana Fernández'},
+        {main:'Mariana Torres', reply:'Carmen Vargas'}
+      ],
+      word_mujeres: 'mujeres', flag:''
+    }
+  },
+
+  init: function() {
+    var self = this;
+    fetch('https://ipapi.co/json/')
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        var code = d.country_code || 'DEFAULT';
+        self.country = self.data[code] ? code : 'DEFAULT';
+        self.apply();
+      })
+      .catch(function(){
+        self.country = 'DEFAULT';
+        self.apply();
+      });
+  },
+
+  get: function() {
+    return this.data[this.country] || this.data['DEFAULT'];
+  },
+
+  apply: function() {
+    var g = this.get();
+
+    // 1. Atualiza comentários com nomes do país
+    var slots = [
+      ['comment-main-1', 0, 'main'],
+      ['comment-reply-1', 0, 'reply'],
+      ['comment-main-2', 1, 'main'],
+      ['comment-reply-2', 1, 'reply'],
+      ['comment-main-3', 2, 'main'],
+      ['comment-reply-3', 2, 'reply'],
+      ['comment-main-4', 3, 'main'],
+      ['comment-reply-4', 3, 'reply'],
+      ['comment-main-5', 4, 'main'],
+      ['comment-reply-5', 4, 'reply']
+    ];
+    slots.forEach(function(s){
+      var el = document.getElementById(s[0]);
+      if(el && g.commentNames[s[1]]) el.textContent = g.commentNames[s[1]][s[2]];
+    });
+
+    // 2. Atualiza textos geo-dinâmicos
+    document.querySelectorAll('[data-geo]').forEach(function(el){
+      var key = el.getAttribute('data-geo');
+      if(g[key] !== undefined) el.textContent = g[key];
+    });
+
+    // 3. Flag no topo (opcional — sutil)
+    if(g.flag) {
+      var bar = document.querySelector('.top-label');
+      if(bar) bar.textContent = g.flag + '  S A L U D  ' + g.flag;
+    }
+
+    // 4. Disponibiliza nomes para o popup
+    window._geoNames = g.names;
+  }
+};
+
+// Inicia geo assim que possível
+document.addEventListener('DOMContentLoaded', function(){ GEO.init(); });
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
 <style>
@@ -204,7 +430,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
 
 <!-- PONTE vídeo → comentários -->
 <div class="social-bridge">
-  ✅ <strong>Más de 89.000 mujeres</strong> ya probaron este método — vea lo que están diciendo:
+  ✅ <strong>Más de 89.000 <span data-geo="word_mujeres">mujeres</span></strong> ya probaron este método — vea lo que están diciendo:
 </div>
 
 <!-- COMENTÁRIOS -->
@@ -215,7 +441,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=47')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Sandra Reyes ✅</div>
+        <div class="fb-name" id="comment-main-1">Sandra Reyes ✅</div>
         <div class="fb-text">Yo no creía… pero en <strong>9 días bajé 7 kilos</strong>. Mi ropa del año pasado ya me queda de nuevo. Lo recomiendo a todas mis amigas. Este truco cambió mi vida. 🙏</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 8 min</div>
@@ -227,7 +453,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=5')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Patricia Gómez</div>
+        <div class="fb-name" id="comment-reply-1">Patricia Gómez</div>
         <div class="fb-text">Al principio era escéptica, pero después de probarlo estoy encantada. Finalmente alcancé mi peso ideal y esto me ayudó a cumplir mis otros objetivos también.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 24 min</div>
@@ -239,8 +465,8 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=9')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Jennifer Avery</div>
-        <div class="fb-text">Chica, yo también perdí 11 libras en solo una semana. ¡Este hábito nocturno con gelatina es increíble!</div>
+        <div class="fb-name" id="comment-main-2">Valentina Cruz</div>
+        <div class="fb-text">Chica, yo también bajé 5 kilos en solo una semana. ¡Este hábito nocturno con gelatina es increíble!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 46 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>21</strong></div>
@@ -251,7 +477,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=16')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Jessica Brown</div>
+        <div class="fb-name" id="comment-reply-2">Camila Rodríguez</div>
         <div class="fb-text">He estado usando este hábito nocturno por poco más de 3 semanas y ¡mis pantalones ya se me caen! ¡Incluso mi esposo me elogió hoy! Gracias por ayudar a tanta gente sin pedir nada a cambio.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 58 min</div>
@@ -263,7 +489,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=25')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Olivia S. Taylor</div>
+        <div class="fb-name" id="comment-main-3">Isabella Moreno</div>
         <div class="fb-text">Por fin alguien que explica todo en solo unos minutos y sin jerga médica. ¡Empiezo esta noche! Gracias por ser tan clara y directa.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 2 h</div>
@@ -275,8 +501,8 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=32')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Ashley Davis</div>
-        <div class="fb-text">Antes la ansiedad por comer me controlaba; siempre estaba comiendo dulces sin parar. Pero ahora ya no los deseo, y ya bajé 19 libras en solo dos semanas. No me sentía tan segura desde hace años.</div>
+        <div class="fb-name" id="comment-main-4">Gabriela Méndez</div>
+        <div class="fb-text">Antes la ansiedad por comer me controlaba; siempre estaba comiendo dulces sin parar. Pero ahora ya no los deseo, y ya bajé 8 kilos en solo dos semanas. No me sentía tan segura desde hace años.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 3 h</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>13</strong></div>
@@ -287,7 +513,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=44')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Emily Johnson</div>
+        <div class="fb-name" id="comment-reply-3">Sofía Ramírez</div>
         <div class="fb-text">Eso es increíble, hermosa. ¿Hiciste algo más en tu rutina además de la receta?</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 46 min</div>
@@ -299,7 +525,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=32')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Ashley Davis</div>
+        <div class="fb-name" id="comment-reply-4">Gabriela Méndez</div>
         <div class="fb-text">No, ¡solo la receta! No hice dietas ni pisé el gimnasio. Es una locura cómo algo tan simple me está ayudando a bajar tanto de peso.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 17 min</div>
@@ -311,8 +537,8 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=52')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Morgan Harper</div>
-        <div class="fb-text">¿Alguien sabe si esto realmente funciona? Mi médico dice que tengo obesidad extrema y me siento bastante desesperada.</div>
+        <div class="fb-name" id="comment-main-5">Luciana Fernández</div>
+        <div class="fb-text">¿Alguien sabe si esto realmente funciona? Mi médico dice que tengo sobrepeso y me siento bastante desesperada.</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 12 min</div>
       <div class="fb-reactions"><span>❤️</span><span>😊</span><span>👍</span><strong>21</strong></div>
@@ -323,7 +549,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=60')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Grace Wilson</div>
+        <div class="fb-name" id="comment-main-3b">Mariana Torres</div>
         <div class="fb-text">Investigué en internet y encontré varios artículos científicos que demuestran que este hábito nocturno realmente funciona. En mi caso, los números en la balanza no paran de bajar — ¡deberías probarlo tú también!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 4 min</div>
@@ -335,7 +561,7 @@ body{font-family:'Source Serif 4',Georgia,serif;background:#fff;color:#111;}
     <div class="fb-avatar" style="background-image:url('https://i.pravatar.cc/80?img=52')"></div>
     <div>
       <div class="fb-bubble">
-        <div class="fb-name">Morgan Harper</div>
+        <div class="fb-name" id="comment-reply-5">Luciana Fernández</div>
         <div class="fb-text">¡Gracias! Ya estoy anotando todos los ingredientes. ¡Confío en que esto va a funcionar!</div>
       </div>
       <div class="fb-actions">Me gusta · Responder · hace 1 min</div>
@@ -459,7 +685,7 @@ setInterval(function(){
     var s=document.getElementById('sticky-cta');
     if(s){s.style.display='block';}
   }
-  setTimeout(showCTA, 60000);
+  setTimeout(showCTA, 8000);
   window.addEventListener('message',function(e){
     if(e.data && (e.data.event==='ended' || e.data.type==='ended')){showCTA();}
   });
@@ -481,7 +707,9 @@ setInterval(function(){
 
 // 5. Popup prova social — só aparece se o vídeo NÃO estiver visível
 (function(){
-  var names=['María G.','Luciana R.','Carmen P.','Sofía M.','Isabel T.','Valentina C.','Ana K.','Rosa F.','Elena V.','Marta B.'];
+  var names=['Sandra R.','Valentina C.','Camila M.','Isabella T.','Gabriela S.','Sofía R.','Luciana F.','Patricia G.','Mariana V.','Carmen B.'];
+  // Usa nomes do país se já carregados
+  function getNames(){ return window._geoNames || names; }
   var actions=['acaba de acceder al método ahora mismo 🎉','acabó de ver el vídeo completo ✅','acaba de garantizar su acceso 🔥','ya empezó el hábito nocturno 🌙','acaba de hacer su pedido 🛒'];
   var popup=document.getElementById('notif-popup');
   var videoVisible=true; // assume visível no início
@@ -498,7 +726,7 @@ setInterval(function(){
   function showNotif(){
     if(!videoVisible){
       // Só exibe se vídeo fora do viewport
-      document.getElementById('np-name').textContent=names[Math.floor(Math.random()*names.length)];
+      document.getElementById('np-name').textContent=getNames()[Math.floor(Math.random()*getNames().length)];
       document.getElementById('np-text').textContent=actions[Math.floor(Math.random()*actions.length)];
       popup.style.display='block';
       setTimeout(function(){popup.style.display='none';},4500);
