@@ -505,6 +505,8 @@
       background: var(--card-bg);
       border-radius: 0 0 var(--radius) var(--radius);
       overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .results-inner { padding: 28px 22px 32px; }
@@ -769,10 +771,12 @@
       background: var(--card-bg);
       border: 1px solid #e7e5e4;
       border-radius: var(--radius);
-      padding: 22px;
-      margin: 22px 0;
+      padding: 20px 16px;
+      margin: 18px 0;
       text-align: center;
       box-shadow: var(--shadow);
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .imc-label {
@@ -827,9 +831,11 @@
     .segredo-card {
       background: linear-gradient(135deg, #1c1917, #3b1a1a);
       border-radius: var(--radius);
-      padding: 22px;
-      margin-bottom: 24px;
+      padding: 20px 16px;
+      margin-bottom: 22px;
       color: #fff;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .segredo-title { font-size: 16px; font-weight: 700; color: var(--rose); margin-bottom: 10px; }
@@ -837,9 +843,9 @@
     .segredo-text strong { color: #fff; }
 
     /* ── CAROUSEL ── */
-    .carousel-section { margin-bottom: 28px; }
+    .carousel-section { margin-bottom: 24px; width: 100%; box-sizing: border-box; }
     .carousel-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin-bottom: 14px; }
-    .carousel-container { overflow: hidden; border-radius: var(--radius); }
+    .carousel-container { overflow: hidden; border-radius: var(--radius); width: 100%; }
 
     .carousel-track {
       display: flex;
@@ -1168,7 +1174,12 @@
     }
 
     /* ── DIAGNOSTICO ── */
-    .diagnostico-page { padding: 28px 22px; }
+    .diagnostico-page {
+      padding: 22px 16px 36px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
 
     /* ── MISSING STEP 10 WRAPPER ── */
     .quiz-step-inner { padding: 28px 22px 32px; }
@@ -2027,7 +2038,7 @@
               <img src="https://i.postimg.cc/xCr0PV8R/exemplo3.png" alt="Transformación 2" class="carousel-img">
               <div class="carousel-review">
                 <span class="tq-stars" style="color:var(--amber)">⭐⭐⭐⭐⭐</span>
-                <p class="carousel-quote"><em>"¡Perdí 8kg en 45 días! No lo podía creer."</em></p>
+                <p class="carousel-quote"><em>"¡Perdí 7kg en 14 días! No lo podía creer."</em></p>
                 <span class="carousel-author">— Carla, 27 años</span>
               </div>
             </div>
@@ -2074,15 +2085,15 @@
       <!-- PLANO -->
       <div class="plano-card">
         <p class="plano-label">Tu plan</p>
-        <p class="plano-nome">1 MES DE TRATAMIENTO</p>
-        <p class="plano-desc"><span class="user-name">Maria</span>, según tu perfil, alcanzarás tu cuerpo ideal en <strong>4 semanas</strong> con el Truco de la Gelatina.</p>
+        <p class="plano-nome">14 DÍAS DE TRATAMIENTO</p>
+        <p class="plano-desc"><span class="user-name">Maria</span>, según tu perfil, alcanzarás tu cuerpo ideal en <strong>14 días</strong> con el Truco de la Gelatina.</p>
         <div class="plano-progress">
           <div class="plano-progress-bar"><div class="plano-progress-fill"></div></div>
           <div class="plano-milestones">
-            <div class="milestone"><p class="milestone-pct">25%</p><p class="milestone-label">Primeros resultados</p><p class="milestone-detail">−3kg</p></div>
-            <div class="milestone"><p class="milestone-pct">50%</p><p class="milestone-label">5 a 7kg menos</p></div>
-            <div class="milestone"><p class="milestone-pct">75%</p><p class="milestone-label">5 a 7kg menos</p></div>
-            <div class="milestone"><p class="milestone-pct">100%</p><p class="milestone-label">¡Cuerpo ideal!</p><p class="milestone-detail">Meta ✅</p></div>
+            <div class="milestone"><p class="milestone-pct">Día 3</p><p class="milestone-label">Menos hinchazón</p><p class="milestone-detail">−1kg</p></div>
+            <div class="milestone"><p class="milestone-pct">Día 7</p><p class="milestone-label">Ropa más suelta</p><p class="milestone-detail">−3kg</p></div>
+            <div class="milestone"><p class="milestone-pct">Día 10</p><p class="milestone-label">Energía y saciedad</p><p class="milestone-detail">−5kg</p></div>
+            <div class="milestone"><p class="milestone-pct">Día 14</p><p class="milestone-label">¡Cuerpo ideal!</p><p class="milestone-detail">−7kg ✅</p></div>
           </div>
         </div>
       </div>
@@ -2092,7 +2103,7 @@
         <p class="includes-title">✅ Lo que recibes hoy:</p>
         <ul class="includes-list">
           <li><span>🍋</span>Receta completa del Truco de la Gelatina</li>
-          <li><span>📋</span>Protocolo de 30 días paso a paso</li>
+          <li><span>📋</span>Protocolo paso a paso</li>
           <li><span>📱</span>Acceso inmediato al material completo</li>
           <li><span>🎁</span>Bonos exclusivos de aceleración</li>
           <li><span>🛡️</span>Garantía total de 30 días</li>
@@ -2127,7 +2138,7 @@
 
       <div class="depo-card">
         <div class="depo-stars">⭐⭐⭐⭐⭐</div>
-        <p class="depo-text">"¡Perdí 8kg en 30 días siguiendo el protocolo. Mi esposo no podía creer la diferencia! La mejor inversión que hice."</p>
+        <p class="depo-text">"¡Perdí 7kg en 14 días siguiendo el protocolo. Mi esposo no podía creer la diferencia! La mejor inversión que hice."</p>
         <p class="depo-author">— Simone Alencar · Verificado ✅</p>
       </div>
 
@@ -2156,7 +2167,7 @@
 
       <!-- GARANTIA -->
       <div class="garantia-card">
-        <img src="img/garatia.png" alt="Garantía 30 días" class="garantia-img" onerror="this.innerHTML='🛡️';this.style.fontSize='80px'">
+        <img src="https://i.postimg.cc/tTWVdHdB/garatia.png" alt="Garantía 30 días" class="garantia-img">
         <h3 class="garantia-title">Garantía Total de 30 Días</h3>
         <p class="garantia-desc">Si por cualquier motivo no estás satisfecha, devolvemos el 100% de tu dinero. Sin preguntas, sin burocracia.</p>
       </div>
