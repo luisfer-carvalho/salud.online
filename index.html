@@ -2134,9 +2134,7 @@
         <p class="price-info">Pago único · Acceso inmediato · Garantía 30 días</p>
       </div>
       <div class="scarcity-notice">🔥 Solo quedan <strong>7 plazas</strong> al precio de oferta hoy</div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1">
-        🍋 ¡OBTENER MI PLAN POR <span data-price-btn>$9.90</span>!
-      </a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$9.90</span>!</a>
 
       <!-- DRA -->
       <div class="dra-card">
@@ -2178,9 +2176,7 @@
         <p class="price-current" data-price-main>$9.90</p>
         <p class="price-info">Pago único · Acceso inmediato</p>
       </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2">
-        🍋 ¡OBTENER MI PLAN POR <span data-price-btn>$9.90</span>!
-      </a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$9.90</span>!</a>
 
       <!-- GARANTIA -->
       <div class="garantia-card">
@@ -2206,9 +2202,7 @@
         <p class="price-current" data-price-main>$9.90</p>
         <p class="price-info">Última oportunidad — descuento expira en: <strong id="timer-inline">10:00</strong></p>
       </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-3">
-        🔥 ¡QUIERO MI GELATINA POR <span data-price-btn>$9.90</span>!
-      </a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-3" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$9.90</span>!</a>
 
       <!-- FAQ -->
       <div class="faq-card">
@@ -2236,9 +2230,7 @@
       </div>
 
       <!-- CTA FINAL -->
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final">
-        🔥 ¡QUIERO MI GELATINA POR <span data-price-btn>$9.90</span>!
-      </a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$9.90</span>!</a>
 
       <div class="trust-footer">
         <span>🔒 Compra 100% segura</span>
@@ -2628,7 +2620,8 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
 
     document.querySelectorAll('[data-price-main]').forEach(el => { el.textContent = mainStr; });
     document.querySelectorAll('[data-price-old]').forEach(el => { el.textContent = 'Antes: ' + oldStr; });
-    document.querySelectorAll('[data-price-btn]').forEach(el => { el.textContent = mainStr; });
+    // Atualiza APENAS o span de valor dentro dos botões (preserva emoji e texto ao redor)
+    document.querySelectorAll('.btn-price-val').forEach(el => { el.textContent = mainStr; });
     document.querySelectorAll('[data-price-compare]').forEach(el => { el.textContent = mainStr; });
 
     document.querySelectorAll('[data-cmp-500]').forEach(el => { el.textContent = cfg.sym + fmt(BASE_USD * CMP_MULTS.c500 * rate, cfg); });
