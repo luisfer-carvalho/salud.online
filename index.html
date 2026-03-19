@@ -2641,31 +2641,19 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
   }
 
   const DEFAULT_CFG  = { sym: '$', code: 'USD', dec: 2, round: 0.01, footer: 'Por menos que un café, tienes acceso al método que ayudó a +127.000 mujeres.' };
-  const DEFAULT_RATE = 1;
 
-  // 1. Detecta país pelo IP
-  fetch('https://ipapi.co/json/')
-    .then(r => r.json())
-    .then(geoData => {
-      const country = (geoData.country_code || '').toUpperCase();
-      const cfg = COUNTRIES[country] || DEFAULT_CFG;
-
-      if (cfg.code === 'USD') {
-        applyPrices(cfg, 1);
-        return;
-      }
-
-      // 2. Busca taxa de câmbio em tempo real (API gratuita, sem chave)
-      return fetch('https://open.er-api.com/v6/latest/USD')
-        .then(r => r.json())
-        .then(fxData => {
-          const rate = fxData.rates && fxData.rates[cfg.code] ? fxData.rates[cfg.code] : 1;
-          applyPrices(cfg, rate);
-        });
-    })
-    .catch(() => {
-      applyPrices(DEFAULT_CFG, DEFAULT_RATE);
-    });
+  // Dispara as duas chamadas em paralelo para máxima velocidade
+  Promise.all([
+    fetch('https://ipapi.co/json/').then(r => r.json()).catch(() => ({})),
+    fetch('https://open.er-api.com/v6/latest/USD').then(r => r.json()).catch(() => ({ rates: {} }))
+  ]).then(([geoData, fxData]) => {
+    const country = (geoData.country_code || '').toUpperCase();
+    const cfg     = COUNTRIES[country] || DEFAULT_CFG;
+    const rate    = (fxData.rates && fxData.rates[cfg.code]) ? fxData.rates[cfg.code] : 1;
+    applyPrices(cfg, rate);
+  }).catch(() => {
+    applyPrices(DEFAULT_CFG, 1);
+  });
 })();
 </script>
 </body>
