@@ -2130,11 +2130,11 @@
       <!-- PRECIO + CTA 1 -->
       <div class="price-block">
         <p class="price-old" data-price-old>Antes: $109.00</p>
-        <p class="price-current" data-price-main>$9.90</p>
+        <p class="price-current" data-price-main>$7.90</p>
         <p class="price-info">Pago único · Acceso inmediato · Garantía 30 días</p>
       </div>
       <div class="scarcity-notice">🔥 Solo quedan <strong>7 plazas</strong> al precio de oferta hoy</div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$9.90</span>!</a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$7.90</span>!</a>
 
       <!-- DRA -->
       <div class="dra-card">
@@ -2159,13 +2159,13 @@
 
       <!-- COMPARA -->
       <div class="compare-card">
-        <h3 class="compare-title" data-compare-title>¿Por qué $9.90 es una ganga?</h3>
+        <h3 class="compare-title" data-compare-title>¿Por qué $7.90 es una ganga?</h3>
         <div class="compare-list">
           <div class="compare-row"><span>Consultas + exámenes</span><span class="compare-price-old" data-cmp-500>$500</span></div>
           <div class="compare-row"><span>Gym + entrenador personal</span><span class="compare-price-old" data-cmp-400>$400</span></div>
           <div class="compare-row"><span>Dietas + suplementos</span><span class="compare-price-old" data-cmp-300>$300</span></div>
           <div class="compare-row"><span>Cremas adelgazantes</span><span class="compare-price-old" data-cmp-200>$200</span></div>
-          <div class="compare-row compare-highlight"><span>⭐ Truco de la Gelatina</span><span class="compare-price-new" data-price-compare>$9.90</span></div>
+          <div class="compare-row compare-highlight"><span>⭐ Truco de la Gelatina</span><span class="compare-price-new" data-price-compare>$7.90</span></div>
         </div>
         <p class="compare-footer"><span data-compare-footer>Por menos que un café, tienes acceso al mismo método que ayudó a +127.000 mujeres a transformar su cuerpo.</span></p>
       </div>
@@ -2173,10 +2173,10 @@
       <!-- PRECIO + CTA 2 -->
       <div class="price-block">
         <p class="price-old" data-price-old>Antes: $109.00</p>
-        <p class="price-current" data-price-main>$9.90</p>
+        <p class="price-current" data-price-main>$7.90</p>
         <p class="price-info">Pago único · Acceso inmediato</p>
       </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$9.90</span>!</a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$7.90</span>!</a>
 
       <!-- GARANTIA -->
       <div class="garantia-card">
@@ -2199,10 +2199,10 @@
 
       <!-- CTA 3 -->
       <div class="price-block">
-        <p class="price-current" data-price-main>$9.90</p>
+        <p class="price-current" data-price-main>$7.90</p>
         <p class="price-info">Última oportunidad — descuento expira en: <strong id="timer-inline">10:00</strong></p>
       </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-3" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$9.90</span>!</a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-3" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$7.90</span>!</a>
 
       <!-- FAQ -->
       <div class="faq-card">
@@ -2230,7 +2230,7 @@
       </div>
 
       <!-- CTA FINAL -->
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$9.90</span>!</a>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$7.90</span>!</a>
 
       <div class="trust-footer">
         <span>🔒 Compra 100% segura</span>
@@ -2280,7 +2280,6 @@ const STEPS = [
 let currentStep = 0;
 
 function showStep(id) {
-  // Esconde todos os steps
   document.querySelectorAll('.step').forEach(s => {
     s.classList.remove('active');
     s.style.display = '';
@@ -2289,7 +2288,6 @@ function showStep(id) {
   const el = document.getElementById(id);
   if (!el) return;
 
-  // Loading tem layout flex especial
   if (id === 'step-loading') {
     el.style.display = 'flex';
   }
@@ -2314,7 +2312,6 @@ function updateNames() {
   document.querySelectorAll('.user-name').forEach(el => {
     el.textContent = display;
   });
-  // Personaliza o headline da reportagem com o nome
   const newsName = document.querySelector('.user-name-news');
   if (newsName) newsName.textContent = state.name ? state.name : 'Oye';
 }
@@ -2377,7 +2374,7 @@ function calculateIMC() {
 }
 
 // ────────────────────────────────────────────────
-// TIMER (inicia ao mostrar a página de vendas)
+// TIMER
 // ────────────────────────────────────────────────
 let timerStarted = false;
 
@@ -2481,10 +2478,8 @@ document.querySelectorAll('.checkbox-btn').forEach(btn => {
 // BOTÕES DE NAVEGAÇÃO EXPLÍCITOS
 // ────────────────────────────────────────────────
 
-// Hero → Nome
 document.getElementById('btn-start')?.addEventListener('click', () => nextStep());
 
-// Nome → Objetivo  (salva o nome digitado)
 document.getElementById('btn-nome')?.addEventListener('click', () => {
   const raw = (document.getElementById('input-nome')?.value || '').trim();
   state.name = raw ? raw.split(' ')[0] : '';
@@ -2492,22 +2487,18 @@ document.getElementById('btn-nome')?.addEventListener('click', () => {
   nextStep();
 });
 
-// Enter no campo de nome funciona igual ao botão
 document.getElementById('input-nome')?.addEventListener('keydown', e => {
   if (e.key === 'Enter') document.getElementById('btn-nome')?.click();
 });
 
-// Botões de "Continuar →" em steps de checkbox
 ['btn-areas', 'btn-impede', 'btn-peso-atual', 'btn-altura'].forEach(id => {
   document.getElementById(id)?.addEventListener('click', () => nextStep());
 });
 
-// Botões de CTA em telas intermediárias
 ['btn-news-cta', 'btn-depoimento-cta', 'btn-intermediaria', 'btn-comecar'].forEach(id => {
   document.getElementById(id)?.addEventListener('click', () => nextStep());
 });
 
-// Página de vendas: inicia o timer quando ela aparecer
 const vendas = document.getElementById('step-vendas');
 let viewContentFired = false;
 const vendObs = new MutationObserver(() => {
@@ -2533,7 +2524,7 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
 })();
 
 // ────────────────────────────────────────────────
-// INIT — mostra a hero e garante estado limpo
+// INIT
 // ────────────────────────────────────────────────
 (function init() {
   document.querySelectorAll('.step').forEach(s => {
@@ -2567,10 +2558,9 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
 })();
 </script>
 <script>
-// ── GEO CURRENCY — valores proporcionais a $9.90 USD em tempo real ──
+// ── GEO CURRENCY — valores proporcionais a $7.90 USD em tempo real ──
 (function () {
 
-  // Configuração por país: símbolo, código ISO, casas decimais, arredondamento, texto local
   const COUNTRIES = {
     BR: { sym: 'R$',   code: 'BRL', dec: 2,  round: 1,    oldMult: 11,  footer: 'Por menos que um café, você tem acesso ao método que ajudou +127.000 mulheres.' },
     MX: { sym: 'MX$',  code: 'MXN', dec: 0,  round: 5,    oldMult: 11,  footer: 'Por menos que un café, tienes acceso al método que ayudó a +127.000 mujeres.' },
@@ -2594,17 +2584,15 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
     PT: { sym: '€',    code: 'EUR', dec: 2,  round: 0.01, oldMult: 11,  footer: 'Por menos que um café, tens acesso ao método que ajudou +127.000 mulheres.' },
   };
 
-  const BASE_USD   = 9.90;   // preço base em USD
+  const BASE_USD   = 7.90;   // preço base em USD
   const OLD_MULT   = 11;     // preço "antes" = 11x o preço atual
-  const CMP_MULTS  = { c500: 50.5, c400: 40.4, c300: 30.3, c200: 20.2 }; // comparativos
+  const CMP_MULTS  = { c500: 50.5, c400: 40.4, c300: 30.3, c200: 20.2 };
 
   function fmt(val, cfg) {
-    // Arredonda para o múltiplo configurado
     const rounded = cfg.round >= 1
       ? Math.round(val / cfg.round) * cfg.round
       : parseFloat(val.toFixed(cfg.dec));
 
-    // Formata com separador de milhar
     return rounded.toLocaleString('es-419', {
       minimumFractionDigits: cfg.dec > 0 && rounded < 100 ? cfg.dec : 0,
       maximumFractionDigits: cfg.dec > 0 && rounded < 100 ? cfg.dec : 0
@@ -2620,7 +2608,6 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
 
     document.querySelectorAll('[data-price-main]').forEach(el => { el.textContent = mainStr; });
     document.querySelectorAll('[data-price-old]').forEach(el => { el.textContent = 'Antes: ' + oldStr; });
-    // Atualiza APENAS o span de valor dentro dos botões (preserva emoji e texto ao redor)
     document.querySelectorAll('.btn-price-val').forEach(el => { el.textContent = mainStr; });
     document.querySelectorAll('[data-price-compare]').forEach(el => { el.textContent = mainStr; });
 
@@ -2635,7 +2622,6 @@ if (vendas) vendObs.observe(vendas, { attributes: true, attributeFilter: ['class
 
   const DEFAULT_CFG  = { sym: '$', code: 'USD', dec: 2, round: 0.01, footer: 'Por menos que un café, tienes acceso al método que ayudó a +127.000 mujeres.' };
 
-  // Dispara as duas chamadas em paralelo para máxima velocidade
   Promise.all([
     fetch('https://ipapi.co/json/').then(r => r.json()).catch(() => ({})),
     fetch('https://open.er-api.com/v6/latest/USD').then(r => r.json()).catch(() => ({ rates: {} }))
