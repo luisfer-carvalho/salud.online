@@ -1522,6 +1522,24 @@
       margin-top: 10px;
       font-weight: 500;
     }
+
+    /* Scarcity Urgency */
+    .scarcity-urgency {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border-left: 4px solid var(--amber);
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .scarcity-urgency p {
+      font-size: 14px;
+      color: #92400e;
+      font-weight: 600;
+      line-height: 1.5;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -2091,12 +2109,12 @@
     <div class="vendas-page">
       <span class="success-badge">✅ ¡Plan Generado con Éxito!</span>
       <h2 class="vendas-title">¡Tu protocolo está listo, <span class="user-name">Maria</span>!</h2>
-      <p class="vendas-warning">⚠️ Este protocolo fue generado exclusivamente para ti — si cierras esta página, lo perderás y el precio puede cambiar</p>
+      <p class="vendas-warning">⚠️ Este protocolo fue generado exclusivamente para ti — si cierras esta página, lo perderás y no podrás acceder a esta oferta especial</p>
 
-      <!-- TIMER TOP -->
+      <!-- ESCASSEZ DE VAGAS -->
       <div class="timer-card">
-        <p class="timer-label">⏱️ Descuento especial expira en:</p>
-        <p class="timer-value" id="timer-value">10:00</p>
+        <p class="timer-label">⏰ Vagas limitadas para esta semana:</p>
+        <p class="timer-value" id="timer-value">47 plazas disponibles</p>
       </div>
 
       <!-- PLANO -->
@@ -2127,14 +2145,8 @@
         </ul>
       </div>
 
-      <!-- PRECIO + CTA 1 -->
-      <div class="price-block">
-        <p class="price-old" data-price-old>Antes: $109.00</p>
-        <p class="price-current" data-price-main>$7.90</p>
-        <p class="price-info">Pago único · Acceso inmediato · Garantía 30 días</p>
-      </div>
-      <div class="scarcity-notice">🔥 Solo quedan <strong>7 plazas</strong> al precio de oferta hoy</div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$7.90</span>!</a>
+      <!-- OFERTA REGIONAL -->
+      <div class="scarcity-notice">🌍 Acceso exclusivo para tu región con tratamiento personalizado incluido</div>
 
       <!-- DRA -->
       <div class="dra-card">
@@ -2157,26 +2169,21 @@
         <p class="depo-author">— Simone Alencar · Verificado ✅</p>
       </div>
 
-      <!-- COMPARA -->
+      <!-- DESTAQUE DE VALOR -->
       <div class="compare-card">
-        <h3 class="compare-title" data-compare-title>¿Por qué $7.90 es una ganga?</h3>
+        <h3 class="compare-title">Por qué esta es una oportunidad única para ti:</h3>
         <div class="compare-list">
-          <div class="compare-row"><span>Consultas + exámenes</span><span class="compare-price-old" data-cmp-500>$500</span></div>
-          <div class="compare-row"><span>Gym + entrenador personal</span><span class="compare-price-old" data-cmp-400>$400</span></div>
-          <div class="compare-row"><span>Dietas + suplementos</span><span class="compare-price-old" data-cmp-300>$300</span></div>
-          <div class="compare-row"><span>Cremas adelgazantes</span><span class="compare-price-old" data-cmp-200>$200</span></div>
-          <div class="compare-row compare-highlight"><span>⭐ Truco de la Gelatina</span><span class="compare-price-new" data-price-compare>$7.90</span></div>
+          <div class="compare-row"><span>✅ Protocolo 100% personalizado</span><span>Según tu perfil</span></div>
+          <div class="compare-row"><span>✅ Acceso inmediato</span><span>Comienza hoy</span></div>
+          <div class="compare-row"><span>✅ Guía completa día a día</span><span>14 días</span></div>
+          <div class="compare-row"><span>✅ Garantía 30 días</span><span>Sin riesgo</span></div>
+          <div class="compare-row compare-highlight"><span>⭐ Descuento regional exclusivo</span><span>Solo esta semana</span></div>
         </div>
-        <p class="compare-footer"><span data-compare-footer>Por menos que un café, tienes acceso al mismo método que ayudó a +127.000 mujeres a transformar su cuerpo.</span></p>
+        <p class="compare-footer">Aprovecha el precio especial por tu región antes de que se agoten las plazas. Este protocolo fue diseñado específicamente para ti basándose en tu perfil.</p>
       </div>
 
-      <!-- PRECIO + CTA 2 -->
-      <div class="price-block">
-        <p class="price-old" data-price-old>Antes: $109.00</p>
-        <p class="price-current" data-price-main>$7.90</p>
-        <p class="price-info">Pago único · Acceso inmediato</p>
-      </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2" data-btn-price>🍋 ¡OBTENER MI PLAN POR <span class="btn-price-val">$7.90</span>!</a>
+      <!-- CTA 1 -->
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-1">🍋 ¡Activar mi protocolo personalizado ahora!</a>
 
       <!-- GARANTIA -->
       <div class="garantia-card">
@@ -2197,12 +2204,8 @@
         <p class="ba-text">VE RESULTADOS EN 14 DÍAS O DEVOLVEMOS TU DINERO</p>
       </div>
 
-      <!-- CTA 3 -->
-      <div class="price-block">
-        <p class="price-current" data-price-main>$7.90</p>
-        <p class="price-info">Última oportunidad — descuento expira en: <strong id="timer-inline">10:00</strong></p>
-      </div>
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-3" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$7.90</span>!</a>
+      <!-- CTA 2 -->
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-2">🔥 ¡Acceder a mi protocolo ahora!</a>
 
       <!-- FAQ -->
       <div class="faq-card">
@@ -2230,7 +2233,10 @@
       </div>
 
       <!-- CTA FINAL -->
-      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final" data-btn-price>🔥 ¡QUIERO MI GELATINA POR <span class="btn-price-val">$7.90</span>!</a>
+      <div class="scarcity-urgency">
+        <p>⚡ <strong>Última oportunidad:</strong> Solo 47 plazas disponibles esta semana para la oferta regional especial.</p>
+      </div>
+      <a href="https://pay.hotmart.com/A104861056R?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-results-cta btn-vendas" id="btn-obter-final">🔥 ¡ACCEDER AHORA A MI PROTOCOLO!</a>
 
       <div class="trust-footer">
         <span>🔒 Compra 100% segura</span>
